@@ -1,0 +1,36 @@
+{
+  "name": "catpicturesbot",
+  "version": "1.0.0",
+  "description": "A chat bot that delivers you cat pictures using thecatapi.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucygliang/CatPicturesBot.git"
+  },
+  "keywords": [
+    "cat",
+    "cats",
+    "bot",
+    "bots",
+    "chatbot",
+    "chatbots",
+    "cat",
+    "picture",
+    "cat",
+    "pictures"
+  ],
+  "author": "Lucy G Liang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucygliang/CatPicturesBot/issues"
+  },
+  "homepage": "https://github.com/lucygliang/CatPicturesBot#readme",
+  "dependencies": {
+    "botbuilder": "^3.4.4",
+    "restify": "^4.3.0",
+    "xml2js": "^0.4.17"
+  }
+}
