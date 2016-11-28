@@ -1,9 +1,9 @@
 # CatPicturesBot
 
 ## Summary
-This bot waits patiently for you to request a cat picture and then picks one from http://thecatapi.com/ for your viewing pleasure! >^o.o^<
+This bot waits patiently for the user to request a cat picture and then picks one at random from http://thecatapi.com/ for his/her viewing pleasure! >^o.o^<
 
-Currently, this bot will show a new cat picture regardless of what the user types. Sample here: http://catpicturesbot.lucyliang.com/
+Try it out here: http://catpicturesbot.lucyliang.com/
 
 ## Frameworks/APIs/Services Used
 * Microsoft's Bot Framework (https://docs.botframework.com/)
