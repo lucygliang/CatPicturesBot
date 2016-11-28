@@ -30,10 +30,9 @@ var connector = new builder.ChatConnector({
 var bot = new builder.UniversalBot(connector);
 server.post('/api/messages', connector.listen());
 
-// Create LUIS recognizer that points to the model (trained via https://www.luis.ai/) for Cat Pictures Bot.
-// The model url should be in the form: https://api.projectoxford.ai/luis/v2.0/apps/[appId]?subscription-key=[appKey]
-// As a workaround for https://github.com/Microsoft/BotBuilder/issues/1633, also add "&verbose=true" to the end of your model url.
-var model = "<your model's url>";
+// Create LUIS recognizer that points to the intent detection model (trained via https://www.luis.ai/).
+// Add "&verbose=true" to the end of the url as a workaround for https://github.com/Microsoft/BotBuilder/issues/1633.
+var model = "https://api.projectoxford.ai/luis/v2.0/apps/" + process.env.LUIS_APP_ID + "?subscription-key=" + process.env.LUIS_APP_KEY + "&verbose=true";
 var recognizer = new builder.LuisRecognizer(model);
 var intentDialog = new builder.IntentDialog({ recognizers: [recognizer] });
 
