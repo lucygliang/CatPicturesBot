@@ -36,8 +36,10 @@ var model = "https://api.projectoxford.ai/luis/v2.0/apps/" + process.env.LUIS_AP
 var recognizer = new builder.LuisRecognizer(model);
 var intentDialog = new builder.IntentDialog({ recognizers: [recognizer] });
 
+var showCatPictureTodo = "Try asking for a cat picture. For instance, type: Show me a cat picture.";
+
 // Add intent handlers
-intentDialog.onDefault(builder.DialogAction.send("How embarrassing! I didn't understand that. I'm still a young bot. >^-.-^< If you would like a cat picture, try asking for one!"));
+intentDialog.onDefault(builder.DialogAction.send("How embarrassing! I didn't understand that. I'm still a young bot. " + showCatPictureTodo));
 intentDialog.matches("Greeting", [
     function (session, args) {
         session.beginDialog('/greeting');
@@ -48,8 +50,8 @@ intentDialog.matches("RequestObject", [
         session.beginDialog('/request', args);
     }
 ]);
-intentDialog.matches("Like", builder.DialogAction.send("Yay! I'm glad you like this. I have more cats for you. :)"));
-intentDialog.matches("Dislike", builder.DialogAction.send("Oh no! I'm sorry you don't like this. We can try another cat. :("));
+intentDialog.matches("Like", builder.DialogAction.send("Yay! I'm glad you like this. I have more cats for you. :) " + showCatPictureTodo));
+intentDialog.matches("Dislike", builder.DialogAction.send("Oh no! I'm sorry you don't like this. We can try another cat. :( " + showCatPictureTodo));
 
 var http = require("https");
 var options = {
@@ -72,9 +74,10 @@ bot.dialog('/greeting', [
     function (session) {
         if (!session.userData.introComplete) {
             session.userData.introComplete = true;
-            session.endDialog(session, "Meow! >^o.o^< I have pictures of cats that I think you'll love. Just ask me for a cat picture!");
-        } else {
-            session.endDialog("Meow! I feel good and hope you do too. >^o_o^<");
+            session.endDialog("Meow! >^o.o^< I have pictures of cats that I think you'll love. " + showCatPictureTodo);
+        }
+        else {
+            session.endDialog("Meow! I feel good and hope you do too. >^o_o^< " + showCatPictureTodo);
         }
     }
 ]);
@@ -88,19 +91,19 @@ bot.dialog("/request", [
         if (requestedObject) {
             shouldGetCatPicture = (requestedMedium) ?
                 // If both object and medium exist, verify object is a cat and medium is a picture.
-                verifyEntity(requestedObject, catSynonyms, session, "I only have pictures of cats. So how about a cat? Try asking for a cat picture.") &&
-                verifyEntity(requestedMedium, pictureSynonyms, session, "I only have cat pictures. So how about a picture? Try asking for a cat picture.") :
+                verifyEntity(requestedObject, catSynonyms, session, "I only have pictures of cats. So how about a cat? " + showCatPictureTodo) &&
+                verifyEntity(requestedMedium, pictureSynonyms, session, "I only have cat pictures. So how about a picture? " + showCatPictureTodo) :
                 // If only object exists, verify that it is either a cat or a picture.
-                verifyEntity(requestedObject, catSynonyms.concat(pictureSynonyms), session, "I only have cat pictures. Try asking for a cat picture.");     
+                verifyEntity(requestedObject, catSynonyms.concat(pictureSynonyms), session, "I only have cat pictures. " + showCatPictureTodo);     
         }
         else if (requestedMedium) {
             // If only medium exists, verify that it is a picture.
             shouldGetCatPicture =
-                verifyEntity(requestedMedium, pictureSynonyms, session, "I only have cat pictures. So how about a picture? Just ask for a cat picture.");
+                verifyEntity(requestedMedium, pictureSynonyms, session, "I only have cat pictures. So how about a picture? " + showCatPictureTodo);
         }
         else {
             // Must have at least a an object or a medium.
-            session.endDialog("I only have cat pictures. Try asking for a cat picture.");
+            session.endDialog("I only have cat pictures. " + showCatPictureTodo);
             shouldGetCatPicture = false;
         }
         
