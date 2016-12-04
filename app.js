@@ -10,6 +10,7 @@ Created using:
 
 var restify = require('restify');
 var builder = require('botbuilder');
+var xml2js = requre("xml2js");
 
 //=========================================================
 // Bot Setup
@@ -59,7 +60,7 @@ var options = {
     path: "/api/images/get?format=xml"
 };
 
-var catSynonyms = ["CAT", "KITTY", "KITTEN", "FELINE", "MEOW"];
+var catSynonyms = ["CAT", "KITTY", "KITTEN", "FELINE", "MEOW", "FLOOF", "FLUFFY", "PUSSY", "PUSS", "ANOTHER", "MORE"];
 var pictureSynonyms = ["PICTURE", "PHOTO", "PHOTOGRAPH", "IMAGE", "PIC", "PICCY", "PIX", "SNAPSHOT"];
 var deliveryPhrases = [
     "Here's your cat!", "One cat coming right up!", "Ask and you shall receive. Meow!", "I picked this cat just for you.",
@@ -117,7 +118,7 @@ bot.dialog("/request", [
             response.on("end", function() {
                 // TheCatApi returns XML, so convert to JSON then parse.
                 var responseJSON;
-                var parseString = require("xml2js").parseString;
+                var parseString = xml2js.parseString;
                 parseString(responseXML, function (err, result) {
                     responseJSON = JSON.stringify(result);
                 });
