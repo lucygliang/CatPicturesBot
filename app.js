@@ -10,7 +10,7 @@ Created using:
 
 var restify = require('restify');
 var builder = require('botbuilder');
-var xml2js = requre("xml2js");
+var xml2js = require("xml2js");
 
 //=========================================================
 // Bot Setup
