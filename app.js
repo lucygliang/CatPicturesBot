@@ -6,6 +6,14 @@ Created using:
    - BotBuilder for Node.js (https://github.com/Microsoft/BotBuilder, https://docs.botframework.com/en-us/node/builder/overview/)
    - The Cat API (http://thecatapi.com/)
    - LUIS - Language Understanding Intelligent Service (https://www.luis.ai/)
+
+Environment variables:
+    - App ID and Password assigned by the Bot Frameworks developer portal
+        - MICROSOFT_APP_ID
+        - MICROSOFT_APP_PASSWORD
+    - App ID and Key assigned by LUIS
+        - LUIS_APP_ID
+        - LUIS_APP_KEY
 */
 
 var restify = require('restify');
@@ -60,11 +68,11 @@ var options = {
     path: "/api/images/get?format=xml"
 };
 
-var catSynonyms = ["CAT", "KITTY", "KITTEN", "FELINE", "MEOW", "FLOOF", "FLUFFY", "PUSSY", "PUSS", "ANOTHER", "MORE"];
+var catSynonyms = ["CAT", "KITTY", "KITTEN", "FELINE", "MEOW", "FLOOF", "FLUFFY", "PUSSY", "PUSS", "ANOTHER", "MORE", "ONE"];
 var pictureSynonyms = ["PICTURE", "PHOTO", "PHOTOGRAPH", "IMAGE", "PIC", "PICCY", "PIX", "SNAPSHOT"];
 var deliveryPhrases = [
-    "Here's your cat!", "One cat coming right up!", "Ask and you shall receive. Meow!", "I picked this cat just for you.",
-    "I think you will like this one.", "There you go! One cat.", "Here's a cat for you!"]
+    "Here's your cat picture!", "One cat picture coming right up!", "Ask and you shall receive. Meow!", "I picked this cat picture just for you.",
+    "I think you will like this one.", "There you go! One cat picture.", "Here's a cat picture for you!"]
 
 //=========================================================
 // Bots Dialogs
@@ -85,29 +93,29 @@ bot.dialog('/greeting', [
 
 bot.dialog("/request", [
     function (session, args) {
-        var shouldGetCatPicture = true;
         var requestedObject = builder.EntityRecognizer.findEntity(args.entities, "Object"); // The requested object, like "cat"
         var requestedMedium = builder.EntityRecognizer.findEntity(args.entities, "Medium"); // The requested medium, like "picture"
 
         if (requestedObject) {
-            shouldGetCatPicture = (requestedMedium) ?
+            if (requestedMedium) {
                 // If both object and medium exist, verify object is a cat and medium is a picture.
-                verifyEntity(requestedObject, catSynonyms, session, "I only have pictures of cats. So how about a cat? " + showCatPictureTodo) &&
-                verifyEntity(requestedMedium, pictureSynonyms, session, "I only have cat pictures. So how about a picture? " + showCatPictureTodo) :
+                verifyEntity(requestedObject, catSynonyms, session, "I only have pictures of cats. So how about a cat? " + showCatPictureTodo);
+                verifyEntity(requestedMedium, pictureSynonyms, session, "I only have cat pictures. So how about a picture? " + showCatPictureTodo);
+            }
+            else {
                 // If only object exists, verify that it is either a cat or a picture.
-                verifyEntity(requestedObject, catSynonyms.concat(pictureSynonyms), session, "I only have cat pictures. " + showCatPictureTodo);     
+                verifyEntity(requestedObject, catSynonyms.concat(pictureSynonyms), session, "I only have cat pictures. " + showCatPictureTodo);    
+            }
         }
         else if (requestedMedium) {
             // If only medium exists, verify that it is a picture.
-            shouldGetCatPicture =
-                verifyEntity(requestedMedium, pictureSynonyms, session, "I only have cat pictures. So how about a picture? " + showCatPictureTodo);
+            verifyEntity(requestedMedium, pictureSynonyms, session, "I only have cat pictures. So how about a picture? " + showCatPictureTodo);
         }
         else {
-            // Must have at least a an object or a medium.
+            // Must have at least an object or a medium.
             session.endDialog("I only have cat pictures. " + showCatPictureTodo);
-            shouldGetCatPicture = false;
         }
-        
+
         // Create callback for response from TheCatApi.
         callback = function(response) {
             var responseXML = "";
@@ -129,8 +137,12 @@ bot.dialog("/request", [
                 // attachment won't work below for some channels unless catImageUrl is explicitly a string.
                 var catImageUrl = String(jsonObject.response.data[0].images[0].image[0].url);
 
+                var msgText = requestedType ?
+                    "Sorry, I don't support requests for specific types or numbers of cats yet. Have a random cat picture instead!" :
+                    deliveryPhrases[Math.floor(Math.random()*deliveryPhrases.length)]; // Pick a random phrase from the list.
+
                 var msg = new builder.Message(session)
-                    .text(deliveryPhrases[Math.floor(Math.random()*deliveryPhrases.length)]) // Pick a random phrase from the list.
+                    .text(msgText)
                     .attachments([{
                         contentType: "image/jpeg",
                         contentUrl: catImageUrl
@@ -151,7 +163,5 @@ function verifyEntity(requestedEntityObject, synonymsList, session, invalidEntit
     if (synonymsList.indexOf(wordToCheck) < 0)
     {
         session.endDialog(invalidEntityMessage);
-        return false;
     }
-    return true;
 }
