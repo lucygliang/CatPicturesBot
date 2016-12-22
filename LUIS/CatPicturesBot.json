@@ -1,0 +1,5004 @@
+{
+  "luis_schema_version": "1.3.0",
+  "name": "CatPicturesBot",
+  "desc": "A bot that shows you random pictures of cats on request.",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "Dislike"
+    },
+    {
+      "name": "Greeting"
+    },
+    {
+      "name": "Like"
+    },
+    {
+      "name": "None"
+    },
+    {
+      "name": "RequestObject"
+    }
+  ],
+  "entities": [
+    {
+      "name": "Medium"
+    },
+    {
+      "name": "Object"
+    },
+    {
+      "name": "Type"
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "bing_entities": [],
+  "actions": [],
+  "model_features": [],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "show me a cat picture",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Medium",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "show me a cat",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "pick a cat picture",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Medium",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "pick a cat",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "give me a cat",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "give me a cat picture",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Medium",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "show me a cat picture plase",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Medium",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "show me a cat please",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "please show me a cat",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "please give me a cat picture",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Medium",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "i want a cat",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "i want a cat picture",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Medium",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "i want a picture",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "another cat",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "another picture",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "cat",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "picture",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "kitty",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "kitten",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "photo",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "image",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "pic",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "find a cat",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "find a dog",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "show me a dog picture",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Medium",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "i want a dog picture",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Medium",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "i want a dog",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "i want a dog video",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Medium",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "show me a cat video",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Medium",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "show me a dog video",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Medium",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "picture of dog",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Medium",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "picture of mice",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Medium",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "picture of things",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Medium",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "image of things",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Medium",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "give me pictures of cats",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Medium",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "give me cats pictures",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Medium",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "i want cats images",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Medium",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "cats",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "pictures of things",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Medium",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "can i have another cat picture?",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Medium",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "can i has cats?",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "can i has pictures?",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "another",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "i want another cat picture",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Medium",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "more",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "give me another",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "i want another",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "do it again",
+      "intent": "RequestObject",
+      "entities": []
+    },
+    {
+      "text": "again",
+      "intent": "RequestObject",
+      "entities": []
+    },
+    {
+      "text": "repeat",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "meow",
+      "intent": "RequestObject",
+      "entities": []
+    },
+    {
+      "text": "can i get a cat picture?",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Medium",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "thank you",
+      "intent": "Like",
+      "entities": []
+    },
+    {
+      "text": "show me one",
+      "intent": "RequestObject",
+      "entities": []
+    },
+    {
+      "text": "show",
+      "intent": "RequestObject",
+      "entities": []
+    },
+    {
+      "text": "show me",
+      "intent": "RequestObject",
+      "entities": []
+    },
+    {
+      "text": "more cats",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "i want a cat!",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "i want dogs!",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "i want dogs",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "i want cat",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "i want more dogs",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "i want more things",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "thanks",
+      "intent": "Like",
+      "entities": []
+    },
+    {
+      "text": "ty",
+      "intent": "Like",
+      "entities": []
+    },
+    {
+      "text": "thanks!",
+      "intent": "Like",
+      "entities": []
+    },
+    {
+      "text": "ty!",
+      "intent": "Like",
+      "entities": []
+    },
+    {
+      "text": "thx",
+      "intent": "Like",
+      "entities": []
+    },
+    {
+      "text": "thanks a lot",
+      "intent": "Like",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "thank",
+      "intent": "Like",
+      "entities": []
+    },
+    {
+      "text": "ty very much",
+      "intent": "Like",
+      "entities": []
+    },
+    {
+      "text": "thanks for the cat pictures",
+      "intent": "Like",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Medium",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "thank you for the cat pictures",
+      "intent": "Like",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Medium",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "thank you for the pictures",
+      "intent": "Like",
+      "entities": []
+    },
+    {
+      "text": "tyvm",
+      "intent": "Like",
+      "entities": []
+    },
+    {
+      "text": "nice",
+      "intent": "Like",
+      "entities": []
+    },
+    {
+      "text": "i like this",
+      "intent": "Like",
+      "entities": []
+    },
+    {
+      "text": "like",
+      "intent": "Like",
+      "entities": []
+    },
+    {
+      "text": "i like this one",
+      "intent": "Like",
+      "entities": []
+    },
+    {
+      "text": "i like this cat picture",
+      "intent": "Like",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Medium",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "i like this very much",
+      "intent": "Like",
+      "entities": []
+    },
+    {
+      "text": "i like this a lot",
+      "intent": "Like",
+      "entities": []
+    },
+    {
+      "text": "yes i like",
+      "intent": "Like",
+      "entities": []
+    },
+    {
+      "text": "nice one",
+      "intent": "Like",
+      "entities": []
+    },
+    {
+      "text": "nice cat",
+      "intent": "Like",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "yay",
+      "intent": "Like",
+      "entities": []
+    },
+    {
+      "text": ":)",
+      "intent": "Like",
+      "entities": []
+    },
+    {
+      "text": "good job",
+      "intent": "Like",
+      "entities": []
+    },
+    {
+      "text": "good cat",
+      "intent": "Like",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "good one",
+      "intent": "Like",
+      "entities": []
+    },
+    {
+      "text": "this is dumb",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "stupid",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "dumb",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "hate",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "dislike",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "i hate this",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "i dislike this",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "bad",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": ":(",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "bad cat",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "this is bad",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "this picture is bad",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "this cat is bad",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "i don't like it",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "i do not like it",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "meh",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "suck",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "this sucks",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "cool",
+      "intent": "Like",
+      "entities": []
+    },
+    {
+      "text": "retarded",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "i don't like these",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "i don't like",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "i don't really like",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "i like it",
+      "intent": "Like",
+      "entities": []
+    },
+    {
+      "text": "i really like it",
+      "intent": "Like",
+      "entities": []
+    },
+    {
+      "text": "nice job",
+      "intent": "Like",
+      "entities": []
+    },
+    {
+      "text": "not a good picture",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "not a good cat",
+      "intent": "Dislike",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "not good",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "i don't",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "do you have dog pictures?",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Medium",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "what about dogs pictures?",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Medium",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "what about dog photos?",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Medium",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "what about food pictures?",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Medium",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "this is good",
+      "intent": "Like",
+      "entities": []
+    },
+    {
+      "text": "pictures of other things",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Medium",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "hello",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "how are things",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "hi",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "yo",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "how are you",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "how's it going",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "what's up",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "what's up?",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "hi there",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "good morning",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "good afternoon",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "nice to meet you",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "welcome",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "how are you doing today?",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "how you doing?",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "howdy",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "hello!",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "hi!",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "hiya",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "good to see you",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "i'd like another cat pic",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "Medium",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "do you have pictures of other animals?",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 6,
+          "endPos": 6
+        },
+        {
+          "entity": "Medium",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "do you have pictures of dogs?",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "Medium",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "do you have other animal pictures",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Medium",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "do you have food pictures",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Medium",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "i want a photo of dogs",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "Medium",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "i want a photo of food",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "Medium",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "i want a photo of kids",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "Medium",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "do you have pictures of places",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "Medium",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "hey",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "hey there",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "hey man",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "hai",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "hello world",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "sup",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "hello there",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "whats up",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "hey!",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "good morning!",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "good afternoon!",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "heyo",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "hi bot",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "hi catpicturesbot",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "hello bot",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "hello catpicturesbot",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "hey bot",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "hello, bot",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "hello, catpicturesbot",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "another picture please",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "can i have a cat video instead?",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Medium",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "picture of a bus please",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Medium",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "i like cat pictures",
+      "intent": "Like",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Medium",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "i like cho",
+      "intent": "Like",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "sdflj",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "send me cat pictures",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Medium",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "give me a picture",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "i want a pineapple",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "i want a mouse",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "i want cats",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "i want a cat video",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Medium",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "how about a cat then?",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "show me a mouse",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "set an alarm",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "gimme a cat",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "sdjlfkasjl",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "what is this",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "help",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "what is going on",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "what",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "what is this?",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "what's going on?",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "what is going on?",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "i don't know what's happening",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "omg",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "show me a cat picture now!!!",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Medium",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "where is my cat!",
+      "intent": "Dislike",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "i want a cat! video",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Medium",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "i like",
+      "intent": "Like",
+      "entities": []
+    },
+    {
+      "text": "create an alarm",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "no",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "set in alarm in 5 minutes called wakeup",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "oh god",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "what the hell",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "those are not cats",
+      "intent": "Dislike",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "this is nonsense",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "i dont' like",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "bye",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "asf",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "helo",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "i can't see it :(",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "idk how this works",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "why don't you work? :,(",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "no seriously, what's going on?",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "sdklf;d",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i love this cat!",
+      "intent": "Like",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "what about another one?",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "sup!",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "cat plcat now",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "can i have a dog picture?",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Medium",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "what about a cat video?",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Medium",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "i want a mouse picture",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Medium",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "i don't like this",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "show me a cat picture again",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Medium",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "another cat pic",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "Medium",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "show me another one",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "give me a cat video",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Medium",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "how about a cat picture?",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Medium",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "i want a photo",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "i want one",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "i want a cat. video",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Medium",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "show me another",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "another one",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "how me a cat",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "i want a cats",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "i wnat a dog",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "good",
+      "intent": "Like",
+      "entities": []
+    },
+    {
+      "text": "i want a",
+      "intent": "RequestObject",
+      "entities": []
+    },
+    {
+      "text": "i want",
+      "intent": "RequestObject",
+      "entities": []
+    },
+    {
+      "text": "sadfs",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "lsadkfjalskfa",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "sdfskjkkjl",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "lkjl",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "that wasn't what i wanted",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "fine",
+      "intent": "Like",
+      "entities": []
+    },
+    {
+      "text": "alskdfjalsdkf",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "do you have cat music?",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Medium",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "wtf",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "blah",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "kitty kitty kitty kitty",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        },
+        {
+          "entity": "Object",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "Object",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "cat cat",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        },
+        {
+          "entity": "Object",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "i can haz cat picture?",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Medium",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "show me a cat on a lap",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Type",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "kitty cat kitty cat kitty cat kitty cat",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Object",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "Object",
+          "startPos": 7,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "show me a kitty!",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "kitty kitty kitty",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        },
+        {
+          "entity": "Object",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "Object",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "kitty kitty",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        },
+        {
+          "entity": "Object",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "show me a cat.",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "yay kitty!",
+      "intent": "Like",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "does this work yet?",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "toe beans please",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "aww, cute!",
+      "intent": "Like",
+      "entities": []
+    },
+    {
+      "text": "kitty pic plz",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        },
+        {
+          "entity": "Medium",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "do you have dogs too?",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "cat in a hat",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        },
+        {
+          "entity": "Type",
+          "startPos": 1,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "you did a bad job",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "huh?",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "cuties",
+      "intent": "Like",
+      "entities": []
+    },
+    {
+      "text": "floof pls",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "c",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "test",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "amazing",
+      "intent": "Like",
+      "entities": []
+    },
+    {
+      "text": "haha",
+      "intent": "Like",
+      "entities": []
+    },
+    {
+      "text": "fluffy",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "omg that is a good one!",
+      "intent": "Like",
+      "entities": []
+    },
+    {
+      "text": "all the cats",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "3",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Type",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "oh that is a good cat!",
+      "intent": "Like",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "ugly cat",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "Type",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "the to disgusting. i don't want to see that",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "that's better",
+      "intent": "Like",
+      "entities": []
+    },
+    {
+      "text": "pussy?",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "hairy cats?",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "Type",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "fat cat",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "Type",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "more cats plz?",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "can i haz cat picture?",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Medium",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "meow!",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "cat and dog",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        },
+        {
+          "entity": "Type",
+          "startPos": 1,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "yay cats :3",
+      "intent": "Like",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "well where is it?",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "that isn't a cat",
+      "intent": "Dislike",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "oh i like!",
+      "intent": "Like",
+      "entities": []
+    },
+    {
+      "text": "i want a shaved cat",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Type",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "cat plz?",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "one more cat, please!",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "cats!!! :d",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "show me 2 cats",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Type",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "that is a good cat",
+      "intent": "Like",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "yay cats",
+      "intent": "Like",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "i don't like this cat",
+      "intent": "Dislike",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "one cat, please",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "one cat picture please :)",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "Medium",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "more cats?",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "more cats!",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "cats please",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "nice cat!",
+      "intent": "Like",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "kitty :)",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "show me a cat picture!",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Medium",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "cat picture please",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        },
+        {
+          "entity": "Medium",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "cat me a show picture",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        },
+        {
+          "entity": "Medium",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "kitty!",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "i like this cat",
+      "intent": "Like",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "kitty?",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "dog",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "i want a cat picture!",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Medium",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "another?",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "cats?",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "cats~",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "caaaaats",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "djdff",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "🐈",
+      "intent": "None",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "xhdjjxhf",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "floof",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "awwwwww",
+      "intent": "Like",
+      "entities": []
+    },
+    {
+      "text": "😻",
+      "intent": "None",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "😺",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "cat!!!",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "cat cat cat cat",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        },
+        {
+          "entity": "Object",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "Object",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "cat cat cat",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        },
+        {
+          "entity": "Object",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "Object",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "cuteieee",
+      "intent": "Like",
+      "entities": []
+    },
+    {
+      "text": "aww ute",
+      "intent": "Like",
+      "entities": []
+    },
+    {
+      "text": "aww that's cute!",
+      "intent": "Like",
+      "entities": []
+    },
+    {
+      "text": "aww cute",
+      "intent": "Like",
+      "entities": []
+    },
+    {
+      "text": "another cat pic plz",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "Medium",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "more kitty",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "another cat please",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "cat picture please!",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        },
+        {
+          "entity": "Medium",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "boooo",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "wow, that's two cats! thanks, cat pictures bot!",
+      "intent": "Like",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 6,
+          "endPos": 6
+        },
+        {
+          "entity": "Object",
+          "startPos": 10,
+          "endPos": 10
+        },
+        {
+          "entity": "Medium",
+          "startPos": 11,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "that's interesting. can i have another?",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 8,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "i don't see anything",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "where's my cat?",
+      "intent": "Dislike",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "cat pls",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "i can haz cat?",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "send me a cat picture",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Medium",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "cute cat!",
+      "intent": "Like",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "please show me a cat picture",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Medium",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "please",
+      "intent": "RequestObject",
+      "entities": []
+    },
+    {
+      "text": "so cute!",
+      "intent": "Like",
+      "entities": []
+    },
+    {
+      "text": "i need to see a cat.",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "猫の写真ください",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "cat plz",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "it's okay i guess",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "cat gif?",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        },
+        {
+          "entity": "Type",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "can you find a cat for me?",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "i want a kitty!",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "猫の写真お願い",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "big cat plz",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "Type",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "two cats",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "Type",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "babies <3",
+      "intent": "Like",
+      "entities": []
+    },
+    {
+      "text": "hi lucy!",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "another!",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "show me an uglt cat",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Type",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "can i have a cat?",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "doggy",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "i want a kitten",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "お猫、ください",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "猫を見せてください",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "no that's not a cat",
+      "intent": "Dislike",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "sad",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "this is my favorite thing i've ever seen",
+      "intent": "Like",
+      "entities": []
+    },
+    {
+      "text": "bigger",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Type",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "many cats",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "Type",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "you're an idiot?",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "tiny kitty",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "Type",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "but that's two cats!",
+      "intent": "Dislike",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "awwww",
+      "intent": "Like",
+      "entities": []
+    },
+    {
+      "text": "i dont",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "show me an ugly cat",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "show me an ugly cay",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Type",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "no i want two cats",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Type",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "moo",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "what should we eat for lunch, cat bot.",
+      "intent": "None",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 7,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "😻😻😻😻😻",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "can i have a gato picture",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Medium",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "cat!",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "cat bot, what should we eat for lunch",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "hmm",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "lol",
+      "intent": "Like",
+      "entities": []
+    },
+    {
+      "text": "jjh",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "cat pictures",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        },
+        {
+          "entity": "Medium",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "okay",
+      "intent": "Like",
+      "entities": []
+    },
+    {
+      "text": "hablas espanol?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "catt",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "can i has cat picture?",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Medium",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "dog picture",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        },
+        {
+          "entity": "Medium",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "tell me a cat fact",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Medium",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "hit me",
+      "intent": "RequestObject",
+      "entities": []
+    },
+    {
+      "text": "give me a cat?",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "?",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "show me the monkey",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "more funny cat picture",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Medium",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Type",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "son of a bitch",
+      "intent": "Dislike",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "i am bored",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "send me a jungle cat",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Type",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "jjjh",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "aww cutte!",
+      "intent": "Like",
+      "entities": []
+    },
+    {
+      "text": "doggy cat",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "Type",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "what should we eat for lunch?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "cat pic",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        },
+        {
+          "entity": "Medium",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "don't show me a cat!",
+      "intent": "Dislike",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "only cats",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "Type",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "one more",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "one cat",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "another one please",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "another now",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "gimme cat",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "gimme another",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "gimme pussy",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "gimme floof",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "give me floof",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "i want another one",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "where's my cat",
+      "intent": "Dislike",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "nothing happened",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "wtf?",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "nothing happened!",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "nothing",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "nothing happened?",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "where is it?",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "where the hell is it?",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "sucks",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "you suck",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "you're stupid?",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "show me pussy",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "show me a floof",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "i wnat another",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "argh!",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "omg what the fuck",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "now what?",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "what now?",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "ome what the fuck",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "so, now what?",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "so now what",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "give me something",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "cat killing a rat",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        },
+        {
+          "entity": "Type",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "cat bitch",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "i meant cta",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "caat",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "c at",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "please show me a cat not",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Type",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "don't show me a cat",
+      "intent": "Dislike",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "i don't see one",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "i have no pic of cat",
+      "intent": "Dislike",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "Medium",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "i dont see",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "can i haz cat pic?",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Medium",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "sory",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "hit me with your best cat",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "ggg",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "wow",
+      "intent": "Like",
+      "entities": []
+    },
+    {
+      "text": "can i have a cat picture?",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Medium",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "cat me",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "one more please",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "do you have more?",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "show a cat",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "caties",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i'm sorry",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "wonderful cat",
+      "intent": "Like",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "cat please",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "tankh you for this one cat",
+      "intent": "Like",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "j",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "sad one",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "Type",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "😍😍😍",
+      "intent": "Like",
+      "entities": []
+    },
+    {
+      "text": "what the fuck",
+      "intent": "Dislike",
+      "entities": []
+    },
+    {
+      "text": "show me a happy cat",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Type",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "show me siamo cat",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Type",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "a big one",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Type",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "show me a cat pictute",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "how sweet",
+      "intent": "Like",
+      "entities": []
+    },
+    {
+      "text": "demarer",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "cc",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "show me a dog",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "wich one",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "01724164414",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "choclate cat",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "Type",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "that's two cats",
+      "intent": "Dislike",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "death cat",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "Type",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "shiw me a cat",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "ok",
+      "intent": "Like",
+      "entities": []
+    },
+    {
+      "text": "please show me a catnot",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "i want a fluffy cat",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Type",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "i want a fat cat",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Type",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "cat with sunglasses",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        },
+        {
+          "entity": "Type",
+          "startPos": 1,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "fuzzy cat please",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "Type",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "cat in a lap",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        },
+        {
+          "entity": "Type",
+          "startPos": 1,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "cat on a roomba",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        },
+        {
+          "entity": "Type",
+          "startPos": 1,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "how about a shaved cat",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "Type",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "cat eating food",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        },
+        {
+          "entity": "Type",
+          "startPos": 1,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "cat gif",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        },
+        {
+          "entity": "Type",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "what a fluffy cat!",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Type",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "four",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Type",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "three",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Type",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "give me more",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "cat meal plan",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        },
+        {
+          "entity": "Medium",
+          "startPos": 1,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "video",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Medium",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "cat video",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 0,
+          "endPos": 0
+        },
+        {
+          "entity": "Medium",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "fluffy cat",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Object",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "Type",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "two",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Type",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "give me many",
+      "intent": "RequestObject",
+      "entities": [
+        {
+          "entity": "Type",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    }
+  ]
+}
