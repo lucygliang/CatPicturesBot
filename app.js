@@ -112,10 +112,6 @@ bot.dialog("/request", [
             // If only medium exists, verify that it is a picture.
             verifyEntity(requestedMedium, pictureSynonyms, session, "I only have cat pictures. So how about a picture? " + showCatPictureTodo);
         }
-        else {
-            // Must have at least an object or a medium.
-            session.endDialog("I only have cat pictures. " + showCatPictureTodo);
-        }
 
         // Create callback for response from TheCatApi.
         callback = function(response) {
