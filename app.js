@@ -60,7 +60,7 @@ intentDialog.matches("RequestObject", [
     }
 ]);
 intentDialog.matches("Like", builder.DialogAction.send("Yay! I'm glad you like this. I have more cats for you. :) " + showCatPictureTodo));
-intentDialog.matches("Dislike", builder.DialogAction.send("Oh no! I'm sorry you don't like this. We can try another cat. :( " + showCatPictureTodo));
+intentDialog.matches("Dislike", builder.DialogAction.send("Oh no! I'm sorry you don't like this. Sometimes things go wrong. We can try again. :( " + showCatPictureTodo));
 
 var http = require("https");
 var options = {
