@@ -95,6 +95,7 @@ bot.dialog("/request", [
     function (session, args) {
         var requestedObject = builder.EntityRecognizer.findEntity(args.entities, "Object"); // The requested object, like "cat"
         var requestedMedium = builder.EntityRecognizer.findEntity(args.entities, "Medium"); // The requested medium, like "picture"
+        var requestedType = builder.EntityRecognizer.findEntity(args.entities, "Type"); // The requested medium, like "picture"
 
         if (requestedObject) {
             if (requestedMedium) {
